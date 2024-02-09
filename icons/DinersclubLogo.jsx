@@ -1,11 +1,12 @@
-export const DinersclubLogo = () => {
+export const DinersclubLogo = ({ width, height, ...props }) => {
   return (
     <svg
-      width="15"
-      height="14"
+      width={width}
+      height={height}
       viewBox="0 0 15 14"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <path
         d="M7.09944 10.4787V3.57691C9.00994 4.06601 10.2108 5.96807 9.71955 7.87012C9.39203 9.17439 8.40949 10.1526 7.09944 10.4787Z"
