@@ -9,19 +9,29 @@
 }
 
 .payment-radio-btn::after {
-  width: 24px;
-  height: 24px;
-  left: -10px;
+  width: 20px;
+  height: 20px;
+  left: -8px;
   border-radius: 50%;
-  background-color: #d1d3d1;
+  background-color: #e4e4e9;
+  border: 1px solid #d3d4db;
   content: '';
   display: inline-block;
   visibility: visible;
   position: relative;
-  cursor: pointer;
 }
 
 .payment-radio-btn:checked::after {
   background-color: #fcfcfd;
-  border: 8px solid #1c2024;
+  border: 7px solid #1c2024;
+}
+
+@media screen and (min-width: 1024px) {
+  .payment-radio-btn::after {
+    width: 24px;
+    height: 24px;
+  }
+  .payment-radio-btn:checked::after {
+    border: 8px solid #1c2024;
+  }
 }

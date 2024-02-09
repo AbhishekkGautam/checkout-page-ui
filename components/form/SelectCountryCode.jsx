@@ -2,7 +2,7 @@ import { Globe } from '@/icons/Globe';
 
 const SelectCountryCode = () => {
   return (
-    <div class="w-1/2 flex">
+    <div class="w-full lg:w-1/2 flex">
       <div
         className="flex-shrink-0 z-10 inline-flex items-center py-4 px-4 pr-0 text-sm font-medium text-center text-gray-500 rounded-s-2xl border border-grey-300 border-r-0"
         type="button"
