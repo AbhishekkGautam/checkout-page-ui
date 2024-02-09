@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import { Open_Sans, Roboto_Serif } from 'next/font/google';
 import './globals.css';
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
         {/* TODO: Navbar */}
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
