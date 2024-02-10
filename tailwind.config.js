@@ -28,6 +28,8 @@ module.exports = {
         green: {
           primary: '#299764',
           secondary: '#E9F9EE',
+          light: '#B4DFC4',
+          100: '#F2FCF5',
         },
         indigo: {
           primary: '#3A5CCC',

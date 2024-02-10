@@ -230,7 +230,7 @@ const CheckoutForm = () => {
         <hr className="mt-5 lg:mt-8 border-grey-400" />
         {/* total payable */}
         <div className="mt-12 lg:mt-16">
-          <div className="flex items-center gap-1 w-fit bg-green-secondary py-1 px-2 rounded-full lg:hidden mb-2 lg:mb-0">
+          <div className="flex items-center gap-1 w-fit bg-green-100 border border-green-light py-1 px-2 rounded-full lg:hidden mb-2 lg:mb-0">
             <PiggyBank color="#299764" />
             <p className="text-xs font-semibold text-green-primary">
               You saved -price-
