@@ -154,7 +154,7 @@ const CheckoutForm = () => {
                     Total payable: $XXX
                   </h1>
                   <div className="flex items-center gap-2">
-                    <span className="text-xs font-semibold text-greySecondary">
+                    <span className="text-xs font-semibold text-greySecondary underline">
                       You will be charged in AED{' '}
                     </span>
                     <Info />
