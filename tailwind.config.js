@@ -34,8 +34,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        'open-sans': 'var(--font-open-sans)',
-        'roboto-serif': 'var(--font-roboto-serif)',
+        opensans: ['var(--font-open-sans)'],
+        robotoserif: ['var(--font-roboto-serif)'],
       },
     },
   },
