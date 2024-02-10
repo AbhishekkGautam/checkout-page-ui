@@ -9,18 +9,17 @@ const CheckoutPage = () => {
     <div className="w-full">
       <Banner />
       <div className="container mx-auto max-w-[1200px] px-4 xl:px-0">
-        {/* form with summary card */}
         <section className="pt-12 lg:pt-20 lg:flex lg:gap-6">
           <div className="w-full lg:w-2/3">
             <h1 className="text-[32px] lg:text-[57px] font-medium leading-[40px] lg:leading-[64px] pb-5 lg:pb-7 font-robotoserif">
               Confirm & pay
             </h1>
-            {/* TODO: show summary card on mobile view and hide on desktop */}
+            {/* only visible on mobile screen */}
             <div className="lg:hidden">
               <BookingSummary />
             </div>
-            {/* free cancellation */}
-            <div className="mt-6 lg:mt-8 rounded-2xl bg-grey-100 border border-grey-200 py-4 pl-5 pr-4 flex justify-between gap-3">
+            {/* free cancellation card */}
+            <div className="mt-6 lg:mt-8 rounded-xl lg:rounded-2xl bg-grey-100 border border-grey-200 py-4 pl-5 pr-4 flex justify-between gap-3">
               <div className="text-sm">
                 <h1 className="font-semibold text-greyPrimary mb-1">
                   Free cancellation

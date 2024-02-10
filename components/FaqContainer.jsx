@@ -11,7 +11,7 @@ const FaqContainer = () => {
         <p className="text-sm lg:text-base font-normal text-greySecondary pb-3 lg:pb-4">
           Here are some of our most asked questions.
         </p>
-        <div className="mt-8 lg:mr-10 hidden lg:flex justify-between bg-grey-600 rounded-2xl p-6">
+        <div className="mt-8 lg:mr-10 hidden lg:flex justify-between bg-grey-600 rounded-xl lg:rounded-2xl p-6">
           <div>
             <p className="text-lg font-semibold text-greyPrimary">
               Still need help?
@@ -28,7 +28,7 @@ const FaqContainer = () => {
       {/* Faqs list */}
       <div className="flex-1 flex flex-col gap-4 lg:gap-6">
         {/* list 1 */}
-        <div className="p-4 pr-5 lg:py-6 lg:px-7 border border-grey-300 rounded-2xl bg-white">
+        <div className="p-4 pr-5 lg:py-6 lg:px-7 border border-grey-300 rounded-xl lg:rounded-2xl bg-white">
           <div className="flex items-center gap-5 lg:gap-6">
             <PlusIcon width={20} height={20} className="cursor-pointer" />
             <h1 className="text-sm lg:text-lg font-semibold text-greyPrimary cursor-pointer">
@@ -37,7 +37,7 @@ const FaqContainer = () => {
           </div>
         </div>
         {/* list 2 */}
-        <div className="p-4 pr-5 lg:py-6 lg:px-7 border border-grey-300 rounded-2xl bg-white">
+        <div className="p-4 pr-5 lg:py-6 lg:px-7 border border-grey-300 rounded-xl lg:rounded-2xl bg-white">
           <div className="flex items-center gap-5 lg:gap-6">
             <MultiplyIcon width={20} height={20} className="cursor-pointer" />
             <h1 className="text-sm lg:text-lg font-semibold text-greyPrimary cursor-pointer">
@@ -55,7 +55,7 @@ const FaqContainer = () => {
           </p>
         </div>
         {/* list 3 */}
-        <div className="p-4 pr-5 lg:py-6 lg:px-7 border border-grey-300 rounded-2xl bg-white">
+        <div className="p-4 pr-5 lg:py-6 lg:px-7 border border-grey-300 rounded-xl lg:rounded-2xl bg-white">
           <div className="flex items-center gap-5 lg:gap-6">
             <PlusIcon width={20} height={20} className="cursor-pointer" />
             <h1 className="text-sm lg:text-lg font-semibold text-greyPrimary cursor-pointer">
@@ -64,7 +64,7 @@ const FaqContainer = () => {
           </div>
         </div>
         {/* list 4 */}
-        <div className="p-4 pr-5 lg:py-6 lg:px-7 border border-grey-300 rounded-2xl bg-white">
+        <div className="p-4 pr-5 lg:py-6 lg:px-7 border border-grey-300 rounded-xl lg:rounded-2xl bg-white">
           <div className="flex items-center gap-6">
             <PlusIcon width={20} height={20} className="cursor-pointer" />
             <h1 className="text-sm lg:text-lg font-semibold text-greyPrimary cursor-pointer">
@@ -73,7 +73,7 @@ const FaqContainer = () => {
           </div>
         </div>
         {/* list 5 */}
-        <div className="p-4 pr-5 lg:py-6 lg:px-7 border border-grey-300 rounded-2xl bg-white">
+        <div className="p-4 pr-5 lg:py-6 lg:px-7 border border-grey-300 rounded-xl lg:rounded-2xl bg-white">
           <div className="flex items-center gap-5 lg:gap-6">
             <PlusIcon width={20} height={20} className="cursor-pointer" />
             <h1 className="text-sm lg:text-lg font-semibold text-greyPrimary cursor-pointer">
@@ -83,7 +83,7 @@ const FaqContainer = () => {
         </div>
       </div>
       {/* only mobile screen */}
-      <div className="flex lg:hidden justify-between bg-grey-600 rounded-2xl py-6 px-4">
+      <div className="flex lg:hidden justify-between bg-grey-600 rounded-xl lg:rounded-2xl py-6 px-4">
         <div>
           <p className="text-sm font-semibold text-greyPrimary">
             Still need help?

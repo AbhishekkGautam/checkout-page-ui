@@ -26,7 +26,6 @@ export default function RootLayout({ children }) {
       className={`${roboto_serif.variable} ${open_sans.variable}`}
     >
       <body className="font-opensans">
-        {/* TODO: Navbar */}
         <Navbar />
         {children}
         <Footer />

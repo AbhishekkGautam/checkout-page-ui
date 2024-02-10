@@ -40,7 +40,7 @@
 }
 
 .box-shadow-image {
-  box-shadow: 0 -8px 70px 5px #d3d4db;
+  box-shadow: 0 -8px 60px 10px #d3d4db;
 }
 
 input[required]:valid + label {
