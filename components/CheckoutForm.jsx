@@ -10,101 +10,72 @@ import {
   PiggyBank,
   VisaLogo,
 } from '@/icons';
-import SelectCountryCode from './form/SelectCountryCode';
+import CountryCodeDropdown from './form/CountryCodeDropdown';
+import FormInput from './form/FormInput';
+import FormInputWithIcon from './form/FormInputWithIcon';
+import SelectDropdown from './form/SelectDropdown';
 
 const CheckoutForm = () => {
   return (
     <div className="">
-      <h1 className="pb-4 text-xl lg:text-2xl font-semibold text-greyPrimary">
-        Enter your details
-      </h1>
-      <p className="pb-3 lg:pb-4 text-sm lg:text-base font-normal text-greySecondary">
+      <h1 className="pb-4 heading-text">Enter your details</h1>
+      <p className="pb-3 lg:pb-4 sub-heading-text">
         We&apos;ll be sending your tickets to the details below. Booking for a
         friend? Add their details.
       </p>
       {/* Form inputs */}
       <div className="pt-4 pb-5 lg:py-8 flex flex-col gap-5 lg:gap-6 text-sm lg:text-base">
-        <input
-          type="text"
-          placeholder="Full name"
-          className="w-full p-4 border border-grey-300 rounded-2xl placeholder:text-greyTertiary"
-        />
+        <FormInput type="text" placeholder="Full name" required />
         <div className="flex flex-col lg:flex-row gap-5 lg:gap-6 w-full">
-          <SelectCountryCode />
-          <input
-            type="phone"
-            placeholder="Phone number"
-            className="w-full lg:w-1/2 p-4 border border-grey-300 rounded-2xl placeholder:text-greyTertiary"
-          />
+          <div className="w-full lg:w-1/2">
+            <CountryCodeDropdown />
+          </div>
+          <div className="w-full lg:w-1/2">
+            <FormInput type="phone" placeholder="Phone number" required />
+          </div>
         </div>
         <div className="flex flex-col lg:flex-row gap-5 lg:gap-6 w-full">
-          <input
-            type="email"
-            placeholder="Email"
-            className="w-full lg:w-1/2 p-4 border border-grey-300 rounded-2xl placeholder:text-greyTertiary"
-          />
-          <input
-            type="email"
-            placeholder="Confirm email"
-            className="w-full lg:w-1/2 p-4 border border-grey-300 rounded-2xl placeholder:text-greyTertiary"
-          />
+          <div className="w-full lg:w-1/2">
+            <FormInput type="text" placeholder="Email" required />
+          </div>
+          <div className="w-full lg:w-1/2">
+            <FormInput type="text" placeholder="Confirm email" required />
+          </div>
         </div>
       </div>
       <hr className="border-grey-400" />
       {/* additional info */}
       <div className="mt-12 lg:mt-16">
-        <h1 className="pb-4 text-xl lg:text-2xl font-semibold text-greyPrimary">
-          Additional information
-        </h1>
-        <p className="pb-3 lg:pb-4 text-sm lg:text-base font-normal text-greySecondary">
+        <h1 className="pb-4 heading-text">Additional information</h1>
+        <p className="pb-3 lg:pb-4 sub-heading-text">
           We need a few more details to complete your reservation.
         </p>
         <div className="pt-4 pb-5 lg:py-8 flex flex-col gap-5 lg:gap-6 text-sm lg:text-base">
           <div className="flex flex-col lg:flex-row gap-5 lg:gap-6 w-full">
-            <input
-              type="text"
-              placeholder="Input label"
-              className="w-full lg:w-1/2 p-4 border border-grey-300 rounded-2xl placeholder:text-greyTertiary"
-            />
-            <select className="border border-grey-300 text-greyTertiary rounded-2xl block w-full lg:w-1/2 py-4 pl-3 pr-4">
-              <option selected className="default-option">
-                Select
-              </option>
-              <option value="CA">California</option>
-              <option value="TX">Texas</option>
-              <option value="WH">Washinghton</option>
-              <option value="FL">Florida</option>
-              <option value="VG">Virginia</option>
-              <option value="GE">Georgia</option>
-              <option value="MI">Michigan</option>
-            </select>
+            <div className="w-full lg:w-1/2">
+              <FormInput type="text" placeholder="Input label" required />
+            </div>
+            <div className="w-full lg:w-1/2">
+              <SelectDropdown placeholder="Select" />
+            </div>
           </div>
-          <select className="border border-grey-300 text-greyTertiary rounded-2xl block w-full py-4 pl-3 pr-4">
-            <option selected className="default-option">
-              Multiselect
-            </option>
-            <option value="CA">California</option>
-            <option value="TX">Texas</option>
-            <option value="WH">Washinghton</option>
-            <option value="FL">Florida</option>
-            <option value="VG">Virginia</option>
-            <option value="GE">Georgia</option>
-            <option value="MI">Michigan</option>
-          </select>
+          <div className="w-full">
+            <SelectDropdown placeholder="Multiselect" />
+          </div>
         </div>
       </div>
       <hr className="border-grey-400" />
       {/* mode of payment */}
       <div className="mt-12 lg:mt-16">
-        <h1 className="pb-3 lg:pb-4 text-xl lg:text-2xl font-semibold text-greyPrimary">
+        <h1 className="pb-3 lg:pb-4 heading-text">
           Select your mode of payment
         </h1>
-        <p className="pb-4 text-sm lg:text-base font-normal text-greySecondary">
+        <p className="pb-4 sub-heading-text">
           Payments with Tickete are secure and encrypted.
         </p>
         {/* payment card info */}
         <div className="mt-4 lg:mt-8">
-          <div className="px-4 lg:px-6 py-6 lg:py-7 border border-greyPrimary rounded-2xl">
+          <div className="px-4 lg:px-6 py-6 lg:py-7 border border-greyPrimary rounded-xl lg:rounded-2xl">
             <div className="mb-8 flex justify-between">
               <div className="flex gap-3 items-center">
                 <div className="border border-grey-400 rounded px-1.5 w-fit">
@@ -147,46 +118,39 @@ const CheckoutForm = () => {
               </div>
             </div>
             <div className="mt-6 lg:mt-8">
-              <div className="w-full flex gap-6 text-sm lg:text-base">
-                <input
-                  type="text"
-                  placeholder="Name on card"
-                  className="w-1/2 p-4 border border-grey-300 rounded-2xl placeholder:text-greyTertiary"
-                />
-                <div className="w-1/2 flex">
-                  <div className="flex items-center z-10 py-4 pl-4 pr-2 rounded-s-2xl border border-grey-300 border-r-0">
-                    <div className="border border-grey-400 rounded px-1.5 w-fit">
-                      <CreditCard />
-                    </div>
-                  </div>
-                  <input
-                    type="text"
-                    className="w-full py-4 pl-2 pr-4 border border-l-0  border-grey-300 rounded-e-2xl placeholder:text-greyTertiary"
+              <div className="w-full flex flex-col lg:flex-row gap-6 text-sm lg:text-base">
+                <div className="w-full lg:w-1/2">
+                  <FormInput type="text" placeholder="Name on card" required />
+                </div>
+                <div className="w-full lg:w-1/2">
+                  <FormInputWithIcon
+                    type="number"
                     placeholder="Card number"
+                    icon={<CreditCard />}
+                    required
                   />
                 </div>
               </div>
-              <div className="w-full flex gap-6 mt-7">
-                <input
-                  type="text"
-                  placeholder="Expiry date"
-                  className="w-1/2 p-4 border border-grey-300 rounded-2xl placeholder:text-greyTertiary"
-                />
-                <input
-                  type="password"
-                  placeholder="CVV/CVC"
-                  maxLength="3"
-                  required
-                  className="w-1/2 p-4 border border-grey-300 rounded-2xl placeholder:text-greyTertiary"
-                />
+              <div className="w-full flex flex-col lg:flex-row gap-6 mt-6 lg:mt-7 text-sm lg:text-base">
+                <div className="w-full lg:w-1/2">
+                  <FormInput type="text" placeholder="Expiry date" required />
+                </div>
+                <div className="w-full lg:w-1/2">
+                  <FormInput
+                    type="password"
+                    placeholder="CVV/CVC"
+                    maxLength="3"
+                    required
+                  />
+                </div>
               </div>
             </div>
-            <div className="mt-8">
-              <hr className="border-grey-400" />
+            <div className="mt-6 lg:mt-8">
+              <hr className="border-grey-400 hidden lg:block" />
               {/* total pay */}
-              <div className="flex items-start justify-between pt-4">
-                <div className="">
-                  <h1 className="text-lg font-semibold text-greyPrimary pb-2">
+              <div className="flex flex-col-reverse gap-2 lg:gap-0 lg:flex-row items-start justify-between lg:pt-4">
+                <div>
+                  <h1 className="text-lg font-semibold text-greyPrimary pb-3 lg:pb-2">
                     Total payable: $XXX
                   </h1>
                   <div className="flex items-center gap-2">
@@ -204,7 +168,7 @@ const CheckoutForm = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-8">
+            <div className="mt-6 lg:mt-8">
               <p className="text-xs font-normal text-greySecondary">
                 By clicking “confirm & pay”, you agree to{' '}
                 <span className="text-indigo-primary underline cursor-pointer">
@@ -218,19 +182,19 @@ const CheckoutForm = () => {
             </div>
             {/* Pay button */}
             <div className="mt-5">
-              <button className="py-4 px-8 flex items-center gap-3 bg-black hover:bg-greyPrimary text-lg font-semibold text-grey-500 rounded-2xl">
+              <button className="w-full lg:w-fit py-4 px-8 flex items-center justify-center gap-3 bg-black hover:bg-greyPrimary text-lg font-semibold text-grey-500 rounded-xl lg:rounded-2xl">
                 <Lock color="white" /> Confirm & pay
               </button>
             </div>
           </div>
         </div>
         {/* coming soon cards */}
-        <div className="mt-5 p-6 border border-grey-200 bg-grey-600 rounded-2xl flex items-center justify-between">
-          <div className="flex items-center gap-4">
+        <div className="mt-5 p-6 border border-grey-200 bg-grey-600 rounded-xl lg:rounded-2xl flex items-center justify-between">
+          <div className="flex items-center gap-2 lg:gap-4">
             <div className="w-[35px] h-5 bg-grey-700 rounded-md flex items-center justify-center">
               <ApplePay />
             </div>
-            <p className="text-base font-semibold text-greyDisabled">
+            <p className="text-sm lg:text-base font-semibold text-greyDisabled">
               Coming Soon
             </p>
           </div>
@@ -244,12 +208,12 @@ const CheckoutForm = () => {
             />
           </div>
         </div>
-        <div className="mt-5 p-6 border border-grey-200 bg-grey-600 rounded-2xl flex items-center justify-between">
-          <div className="flex items-center gap-4">
+        <div className="mt-5 p-6 border border-grey-200 bg-grey-600 rounded-xl lg:rounded-2xl flex items-center justify-between">
+          <div className="flex items-center gap-2 lg:gap-4">
             <div className="w-[35px] h-5 bg-grey-700 rounded-md flex items-center justify-center">
               <GooglePay />
             </div>
-            <p className="text-base font-semibold text-greyDisabled">
+            <p className="text-sm lg:text-base font-semibold text-greyDisabled">
               Coming Soon
             </p>
           </div>
@@ -263,15 +227,21 @@ const CheckoutForm = () => {
             />
           </div>
         </div>
-        <hr className="mt-8 border-grey-400" />
+        <hr className="mt-5 lg:mt-8 border-grey-400" />
         {/* total payable */}
-        <div className="mt-16">
-          <h1 className="text-2xl font-semibold text-greyPrimary pb-4">
+        <div className="mt-12 lg:mt-16">
+          <div className="flex items-center gap-1 w-fit bg-green-secondary py-1 px-2 rounded-full lg:hidden mb-2 lg:mb-0">
+            <PiggyBank color="#299764" />
+            <p className="text-xs font-semibold text-green-primary">
+              You saved -price-
+            </p>
+          </div>
+          <h1 className="text-xl lg:text-2xl font-semibold text-greyPrimary pb-5 lg:pb-4">
             Total Payable: $XXX
           </h1>
-          <div className="border border-grey-200 p-4 rounded-2xl">
+          <div className="border border-grey-200 p-4 rounded-xl lg:rounded-2xl">
             <div className="flex items-start gap-3">
-              <InfoFill />
+              <InfoFill className="flex-shrink-0" />
               <div className="text-sm">
                 <p className="font-semibold text-greyPrimary mb-1">
                   You will be charged in AED

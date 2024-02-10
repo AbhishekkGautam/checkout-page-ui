@@ -2,110 +2,20 @@ import {
   Calendar,
   Clock,
   Info,
-  LeftArrow,
   Lock,
   PiggyBank,
   PlusIcon,
-  RightArrow,
   Ticket,
-  Trophy,
   Users,
 } from '@/icons';
 import Image from 'next/image';
+import ImageSlider from './ImageSlider';
 
 const BookingSummary = () => {
   return (
-    <div className="rounded-3xl border border-grey-400">
+    <div className="rounded-t-3xl rounded-b-xl lg:rounded-3xl border border-grey-400">
       <div className="p-4 pb-0 border-b border-grey-400">
-        {/* image slider */}
-        <div className="w-full h-[178px] lg:h-[198px] relative">
-          <Image
-            src="/img/slide-image-01.png"
-            alt="slider image"
-            fill
-            className="object-cover rounded-2xl hidden lg:block"
-          />
-          <Image
-            src="/img/slider-image-02.png"
-            alt="slider image"
-            fill
-            className="object-cover rounded-2xl lg:hidden"
-          />
-          {/* slider indicators */}
-          <div className="absolute z-30 flex items-center -translate-x-1/2 gap-[6px] bottom-4 left-1/2">
-            <button
-              type="button"
-              class="w-[6px] h-[6px] rounded-full bg-grey-600 opacity-55"
-              aria-current="true"
-              aria-label="Slide 1"
-              data-carousel-slide-to="0"
-            ></button>
-            <button
-              type="button"
-              class="w-2 h-2 rounded-full bg-grey-600 opacity-55"
-              aria-current="false"
-              aria-label="Slide 2"
-              data-carousel-slide-to="1"
-            ></button>
-            <button
-              type="button"
-              class="w-2 h-2 rounded-full bg-grey-600 opacity-55"
-              aria-current="false"
-              aria-label="Slide 3"
-              data-carousel-slide-to="2"
-            ></button>
-            <button
-              type="button"
-              class="w-[28px] h-2 rounded-full bg-grey-100"
-              aria-current="false"
-              aria-label="Slide 4"
-              data-carousel-slide-to="3"
-            ></button>
-            <button
-              type="button"
-              class="w-2 h-2 rounded-full bg-grey-600 opacity-55"
-              aria-current="false"
-              aria-label="Slide 2"
-              data-carousel-slide-to="1"
-            ></button>
-            <button
-              type="button"
-              class="w-2 h-2 rounded-full bg-grey-600 opacity-55"
-              aria-current="false"
-              aria-label="Slide 3"
-              data-carousel-slide-to="2"
-            ></button>
-            <button
-              type="button"
-              class="w-[6px] h-[6px] rounded-full bg-grey-600 opacity-55"
-              aria-current="true"
-              aria-label="Slide 1"
-              data-carousel-slide-to="0"
-            ></button>
-          </div>
-          {/* slider controls */}
-          <button
-            type="button"
-            className="hidden absolute top-0 start-0 z-30 lg:flex items-center justify-center h-full px-3 cursor-pointer"
-          >
-            <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-grey-600">
-              <LeftArrow />
-            </span>
-          </button>
-          <button
-            type="button"
-            className="hidden absolute top-0 end-0 z-30 lg:flex items-center justify-center h-full px-3 cursor-pointer"
-          >
-            <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-grey-600">
-              <RightArrow />
-            </span>
-          </button>
-          {/* best seller badge */}
-          <div className="absolute top-3 left-3 bg-white flex items-center gap-1 py-1 px-2 rounded">
-            <Trophy />
-            <span className="text-xs font-semibold leading-5">Bestseller</span>
-          </div>
-        </div>
+        <ImageSlider />
         {/* rating */}
         <div className="flex mt-4 gap-1 items-center">
           <Image src="/img/star.png" alt="rating star" width="14" height="14" />
@@ -174,7 +84,7 @@ const BookingSummary = () => {
         <div className="flex items-center gap-1 w-fit bg-green-secondary py-1 px-2 rounded-full">
           <PiggyBank color="#299764" />
           <p className="text-xs font-semibold text-green-primary">
-            You save -price-
+            You saved -price-
           </p>
         </div>
         <div className="flex items-center gap-2 mt-5 mb-4 lg:mb-0">
