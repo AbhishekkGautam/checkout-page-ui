@@ -44,7 +44,7 @@ const FaqContainer = () => {
               What are some hidden gems to see in Rome?
             </h1>
           </div>
-          <p className="text-sm lg:text-base font-normal text-greySecondary pl-9 lg:pl-11 pb-6 mt-5">
+          <p className="text-sm lg:text-base font-normal text-greySecondary pl-10 lg:pl-11 pb-6 mt-5">
             Rome is packed with hidden gems. If you love art, don&apos;t miss
             the Galleria Doria Pamphilj or Palazzo Barberini. The Museo Barracco
             is a free museum and well worth a quick visit. If you love the
