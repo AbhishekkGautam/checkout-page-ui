@@ -1,9 +1,11 @@
 export { ApplePay } from './ApplePay';
 export { ArrowLeft } from './ArrowLeft';
 export { Calendar } from './Calendar';
+export { CaretDown } from './CaretDown';
 export { Clock } from './Clock';
 export { CreditCard } from './CreditCard';
 export { DinersclubLogo } from './DinersclubLogo';
+export { Globe } from './Globe';
 export { GooglePay } from './GooglePay';
 export { Info } from './Info';
 export { InfoFill } from './InfoFill';

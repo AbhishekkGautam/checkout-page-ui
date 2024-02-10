@@ -1,11 +1,14 @@
 import { ArrowLeft, Lock, Logo, Question } from '@/icons';
+import Link from 'next/link';
 
 const Navbar = () => {
   return (
     <header className="bg-lightGrey">
-      <div className="p-4 lg:p-0 lg:container lg:mx-auto">
+      <div className="p-4 lg:p-0 container max-w-[1200px] mx-auto">
         <div className="flex justify-between items-center h-9 lg:h-[72px]">
-          <Logo className="hidden lg:block" />
+          <Link href="/">
+            <Logo className="hidden lg:block" />
+          </Link>
           <ArrowLeft className="lg:hidden mx-3" />
           <div className="flex gap-2 items-center font-semibold text-greySecondary">
             <Lock color="#7E808A" />
