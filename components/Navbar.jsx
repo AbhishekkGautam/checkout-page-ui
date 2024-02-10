@@ -6,8 +6,8 @@ const Navbar = () => {
     <header className="bg-lightGrey">
       <div className="p-4 lg:p-0 container max-w-[1200px] mx-auto">
         <div className="flex justify-between items-center h-9 lg:h-[72px]">
-          <Link href="/">
-            <Logo className="hidden lg:block" />
+          <Link href="/" className="hidden lg:block">
+            <Logo />
           </Link>
           <ArrowLeft className="lg:hidden mx-3" />
           <div className="flex gap-2 items-center font-semibold text-greySecondary">
