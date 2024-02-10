@@ -6,7 +6,7 @@ const SelectDropdown = ({ placeholder }) => {
       <div className="flex items-center justify-between p-4 border border-grey-300 text-greyTertiary rounded-2xl w-full cursor-pointer">
         <div className="flex items-center gap-4">
           <div className="text-greyTertiary">
-            {placeholder} <span className="text-red-500">*</span>
+            {placeholder} <span className="text-red-primary">*</span>
           </div>
         </div>
         <CaretDown />

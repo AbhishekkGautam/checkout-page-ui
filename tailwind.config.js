@@ -32,6 +32,9 @@ module.exports = {
         indigo: {
           primary: '#3A5CCC',
         },
+        red: {
+          primary: '#C62A2F',
+        },
       },
       fontFamily: {
         opensans: ['var(--font-open-sans)'],

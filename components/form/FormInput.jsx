@@ -7,7 +7,7 @@ const FormInput = ({ type, placeholder, ...props }) => {
         {...props}
       />
       <label className="absolute z-1 inset-y-0 start-0 flex items-center ps-4 text-greyTertiary">
-        {placeholder} <span className="text-red-500 ml-1">*</span>
+        {placeholder} <span className="text-red-primary ml-1">*</span>
       </label>
     </div>
   );

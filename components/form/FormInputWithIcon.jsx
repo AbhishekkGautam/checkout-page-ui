@@ -13,7 +13,7 @@ const FormInputWithIcon = ({ type, placeholder, icon, ...props }) => {
           {...props}
         />
         <label className="absolute z-1 inset-y-0 start-0 flex items-center ps-16 text-greyTertiary">
-          {placeholder} <span className="text-red-500 ml-1">*</span>
+          {placeholder} <span className="text-red-primary ml-1">*</span>
         </label>
       </div>
     </div>

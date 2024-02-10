@@ -7,7 +7,7 @@ const CountryCodeDropdown = () => {
         <div className="flex items-center gap-4">
           <Globe />
           <div className="text text-greyTertiary">
-            Country code <span className="text-red-500">*</span>
+            Country code <span className="text-red-primary">*</span>
           </div>
         </div>
         <CaretDown />
