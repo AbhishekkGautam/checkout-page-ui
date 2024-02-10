@@ -139,7 +139,7 @@ const PaymentCardsOption = () => {
             Coming Soon
           </p>
         </div>
-        <div className="-mt-2 lg:-mt-2.5">
+        <div className="-mt-1 lg:-mt-2.5">
           <input
             type="radio"
             name="credit-debit-card"
@@ -158,7 +158,7 @@ const PaymentCardsOption = () => {
             Coming Soon
           </p>
         </div>
-        <div className="-mt-2 lg:-mt-2.5">
+        <div className="-mt-1 lg:-mt-2.5">
           <input
             type="radio"
             name="credit-debit-card"
