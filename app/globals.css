@@ -2,10 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-.default-option:: {
-  color: #e32;
-  content: '*';
-  display: inline;
+@layer components {
+  .heading-text {
+    @apply text-xl lg:text-2xl font-semibold text-greyPrimary;
+  }
+  .sub-heading-text {
+    @apply text-sm lg:text-base font-normal text-greySecondary;
+  }
 }
 
 .payment-radio-btn::after {
@@ -34,4 +37,21 @@
   .payment-radio-btn:checked::after {
     border: 8px solid #1c2024;
   }
+}
+
+.box-shadow-image {
+  box-shadow: 0 -8px 70px 5px #d3d4db;
+}
+
+input[required]:valid + label {
+  display: none;
+}
+
+.dropdown-list li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.dropdown-list li:hover {
+  background-color: #f0f0f0;
 }
