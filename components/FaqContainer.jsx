@@ -29,7 +29,7 @@ const FaqContainer = () => {
       <div className="flex-1 flex flex-col gap-4 lg:gap-6">
         {/* list 1 */}
         <div className="p-4 pr-5 lg:py-6 lg:px-7 border border-grey-300 rounded-2xl bg-white">
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-5 lg:gap-6">
             <PlusIcon width={20} height={20} className="cursor-pointer" />
             <h1 className="text-sm lg:text-lg font-semibold text-greyPrimary cursor-pointer">
               What should I do on my first trip to Rome?
@@ -38,13 +38,13 @@ const FaqContainer = () => {
         </div>
         {/* list 2 */}
         <div className="p-4 pr-5 lg:py-6 lg:px-7 border border-grey-300 rounded-2xl bg-white">
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-5 lg:gap-6">
             <MultiplyIcon width={20} height={20} className="cursor-pointer" />
             <h1 className="text-sm lg:text-lg font-semibold text-greyPrimary cursor-pointer">
               What are some hidden gems to see in Rome?
             </h1>
           </div>
-          <p className="text-sm lg:text-base font-normal text-greySecondary pl-12 pb-6 mt-5">
+          <p className="text-sm lg:text-base font-normal text-greySecondary pl-9 lg:pl-11 pb-6 mt-5">
             Rome is packed with hidden gems. If you love art, don&apos;t miss
             the Galleria Doria Pamphilj or Palazzo Barberini. The Museo Barracco
             is a free museum and well worth a quick visit. If you love the
@@ -56,7 +56,7 @@ const FaqContainer = () => {
         </div>
         {/* list 3 */}
         <div className="p-4 pr-5 lg:py-6 lg:px-7 border border-grey-300 rounded-2xl bg-white">
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-5 lg:gap-6">
             <PlusIcon width={20} height={20} className="cursor-pointer" />
             <h1 className="text-sm lg:text-lg font-semibold text-greyPrimary cursor-pointer">
               How much time should I spend in Rome?
@@ -74,7 +74,7 @@ const FaqContainer = () => {
         </div>
         {/* list 5 */}
         <div className="p-4 pr-5 lg:py-6 lg:px-7 border border-grey-300 rounded-2xl bg-white">
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-5 lg:gap-6">
             <PlusIcon width={20} height={20} className="cursor-pointer" />
             <h1 className="text-sm lg:text-lg font-semibold text-greyPrimary cursor-pointer">
               What is the best way to get around Rome?
