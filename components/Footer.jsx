@@ -2,7 +2,7 @@ import { LogoLight } from '@/icons/LogoLight';
 
 const Footer = () => {
   return (
-    <section className="w-full mt-16 lg:mt-20">
+    <footer className="w-full mt-16 lg:mt-20">
       <div className="bg-black px-5 lg:px-0">
         <div className="container max-w-[1200px] mx-auto pt-20 lg:pt-[120px]">
           <div className="hidden lg:block">
@@ -31,7 +31,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-    </section>
+    </footer>
   );
 };
 
