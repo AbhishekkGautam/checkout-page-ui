@@ -78,7 +78,7 @@ const CheckoutForm = () => {
           <div className="px-4 lg:px-6 py-6 lg:py-7 border border-greyPrimary rounded-xl lg:rounded-2xl">
             <div className="mb-8 flex justify-between">
               <div className="flex gap-3 items-center">
-                <div className="border border-grey-400 rounded px-1.5 w-fit">
+                <div className="w-[35px] h-5 flex items-center justify-center border border-grey-400 rounded">
                   <CreditCard />
                 </div>
                 <div className="text-greyPrimary font-semibold text-sm lg:text-base">

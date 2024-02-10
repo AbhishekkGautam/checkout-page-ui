@@ -2,7 +2,7 @@ const FormInputWithIcon = ({ type, placeholder, icon, ...props }) => {
   return (
     <div className="relative">
       <div className="absolute inset-y-0 start-0 flex items-center ps-4 pointer-events-none">
-        <div className="border border-grey-400 rounded px-1.5 w-fit">
+        <div className="w-[35px] h-5 flex items-center justify-center border border-grey-400 rounded">
           {icon}
         </div>
       </div>
