@@ -130,7 +130,7 @@ const PaymentCardsOption = () => {
         </div>
       </div>
       {/* coming soon cards */}
-      <div className="mt-5 p-6 border border-grey-200 bg-grey-600 rounded-xl lg:rounded-2xl flex items-center justify-between">
+      <div className="mt-5 py-5 px-4 lg:p-6 border border-grey-200 bg-grey-600 rounded-xl lg:rounded-2xl flex items-center justify-between">
         <div className="flex items-center gap-2 lg:gap-4">
           <div className="w-[35px] h-5 bg-grey-700 rounded-md flex items-center justify-center">
             <ApplePay />
@@ -149,7 +149,7 @@ const PaymentCardsOption = () => {
           />
         </div>
       </div>
-      <div className="mt-5 p-6 border border-grey-200 bg-grey-600 rounded-xl lg:rounded-2xl flex items-center justify-between">
+      <div className="mt-5 py-5 px-4 lg:p-6 border border-grey-200 bg-grey-600 rounded-xl lg:rounded-2xl flex items-center justify-between">
         <div className="flex items-center gap-2 lg:gap-4">
           <div className="w-[35px] h-5 bg-grey-700 rounded-md flex items-center justify-center">
             <GooglePay />

@@ -33,6 +33,7 @@
   .payment-radio-btn::after {
     width: 24px;
     height: 24px;
+    left: -10px;
   }
   .payment-radio-btn:checked::after {
     border: 8px solid #1c2024;

@@ -19,7 +19,7 @@ const CheckoutPage = () => {
               <BookingSummary />
             </div>
             {/* free cancellation card */}
-            <div className="mt-6 lg:mt-8 rounded-xl lg:rounded-2xl bg-grey-100 border border-grey-200 py-4 pl-5 pr-4 flex justify-between gap-3">
+            <div className="mt-6 lg:mt-8 rounded-xl lg:rounded-2xl bg-grey-100 border border-grey-200 py-3 px-4 lg:py-4 lg:pl-5 lg:pr-4 flex justify-between gap-3">
               <div className="text-sm">
                 <h1 className="font-semibold text-greyPrimary mb-1">
                   Free cancellation
@@ -28,7 +28,7 @@ const CheckoutPage = () => {
                   Tickets can be cancelled by 13th December, 2022.
                 </p>
               </div>
-              <div className="cursor-pointer">
+              <div className="flex-shrink-0 cursor-pointer">
                 <CloseButton />
               </div>
             </div>
