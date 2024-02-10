@@ -2,10 +2,10 @@ import { CaretDown } from '@/icons';
 
 const SelectDropdown = ({ placeholder }) => {
   return (
-    <div class="relative flex">
-      <div class="flex items-center justify-between p-4 border border-grey-300 text-greyTertiary rounded-2xl w-full cursor-pointer">
+    <div className="relative flex">
+      <div className="flex items-center justify-between p-4 border border-grey-300 text-greyTertiary rounded-2xl w-full cursor-pointer">
         <div className="flex items-center gap-4">
-          <div class="text-greyTertiary">
+          <div className="text-greyTertiary">
             {placeholder} <span className="text-red-500">*</span>
           </div>
         </div>

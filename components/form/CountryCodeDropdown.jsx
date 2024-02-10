@@ -2,11 +2,11 @@ import { CaretDown, Globe } from '@/icons';
 
 const CountryCodeDropdown = () => {
   return (
-    <div class="relative flex">
-      <div class="flex items-center justify-between p-4 border border-grey-300 text-greyTertiary rounded-xl lg:rounded-2xl w-full cursor-pointer">
+    <div className="relative flex">
+      <div className="flex items-center justify-between p-4 border border-grey-300 text-greyTertiary rounded-xl lg:rounded-2xl w-full cursor-pointer">
         <div className="flex items-center gap-4">
           <Globe />
-          <div class="text text-greyTertiary">
+          <div className="text text-greyTertiary">
             Country code <span className="text-red-500">*</span>
           </div>
         </div>

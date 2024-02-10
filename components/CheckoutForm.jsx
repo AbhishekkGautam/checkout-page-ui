@@ -90,7 +90,7 @@ const CheckoutForm = () => {
                 type="radio"
                 name="credit-debit-card"
                 value="credit-debit-card"
-                checked
+                defaultChecked
                 className="invisible payment-radio-btn cursor-pointer"
               />
             </div>

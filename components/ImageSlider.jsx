@@ -8,12 +8,14 @@ const ImageSlider = () => {
         src="/img/slide-image-01.png"
         alt="slider image"
         fill
+        priority
         className="object-cover hidden lg:block"
       />
       <Image
         src="/img/slider-image-02.png"
         alt="slider image"
         fill
+        priority
         className="object-cover lg:hidden"
       />
       {/* slider indicators */}
