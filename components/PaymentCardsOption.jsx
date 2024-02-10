@@ -96,7 +96,7 @@ const PaymentCardsOption = () => {
                 </h1>
                 <div className="flex items-center gap-2">
                   <span className="text-xs font-semibold text-greySecondary underline">
-                    You will be charged in AED{' '}
+                    Your card will be charged in AED{' '}
                   </span>
                   <Info />
                 </div>
